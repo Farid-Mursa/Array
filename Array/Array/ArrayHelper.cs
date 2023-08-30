@@ -21,7 +21,7 @@ namespace ArrayAddRemove
             int num = Array.IndexOf(arr, value);
             if (num < 0) return arr;
 
-            for (int i = num; i <= arr.Length; i++)
+            for (int i = num; i < arr.Length-1; i++)
             {
                 arr[i] = arr[i + 1];
             }
